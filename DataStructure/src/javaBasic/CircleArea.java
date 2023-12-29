@@ -1,4 +1,4 @@
-package dataStructure;
+package javaBasic;
 
 public class CircleArea {
 

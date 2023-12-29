@@ -1,4 +1,4 @@
-package dataStructure;
+package javaBasic;
 import java.util.Scanner;
 
 public class NestedIf {
