@@ -9,8 +9,8 @@ public class MonthSchedule {
     public static void main(String[] args) {
         HashMap<Integer, Day> days = new HashMap<Integer, Day>();
         Scanner scan = new Scanner(System.in);
-        
-        for(int k=1;k<31;k++) {
+
+        for (int k = 1; k < 31; k++) {
             days.put(k, new Day());
         }
         System.out.println("이번달 스케줄 관리 프로그램");

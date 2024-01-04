@@ -22,7 +22,7 @@ public class Rectangle {
     public Boolean contains(Rectangle r) {
         if (x > r.x || y > r.y)
             return false;
-        else if(width< r.width || height < r.height)
+        else if (width < r.width || height < r.height)
             return false;
         return true;
     }
