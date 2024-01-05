@@ -1,5 +1,8 @@
 package javaBasic;
 
+import java.util.Iterator;
+import java.util.StringTokenizer;
+
 class TV {
     private int size;
 
@@ -45,15 +48,41 @@ class IPTV extends ColorTV{
 
 
 public class Trainning3 {
-
-
-
     public static void main(String[] args) {
-        ColorTV myTV = new ColorTV(32, 1024);
-        myTV.printPropoerty();
-        IPTV iptv = new IPTV("192.1.1.2", 32, 2048);       
-        iptv.printPropoerty();
-
+//        StringBuffer sb = new StringBuffer("This");
+//        
+//        sb.append(" is pencil");
+//        System.out.println(sb);
+//        
+//        sb.insert(7, " my");
+//        System.out.println(sb);
+//        
+//        sb.replace(8,10,"your");
+//        System.out.println(sb);
+//        
+//        sb.delete(8, 13);
+//        System.out.println(sb);
+//        
+//        sb.setLength(4);
+//        System.out.println(sb);
+        
+//        StringTokenizer st = new StringTokenizer("È«±æµ¿/ÀåÈ­/È«·Ã/ÄáÁã/ÆÏÁã","/");
+//        while(st.hasMoreElements()) {
+//            System.out.println(st.nextToken());
+//        }
+        System.out.println(Math.PI);
+        System.out.println(Math.ceil(3.5));
+        System.out.println(Math.floor(3.5));
+        System.out.println(Math.sqrt(9));
+        System.out.println(Math.exp(2));
+        System.out.println(Math.round(3.14));
+        
+        System.out.println("ÀÌ¹øÁÖ Çà¿îÀÇ ¹øÈ£´Â ");
+        for(int i=0;i<5;i++) {
+            System.out.print((int)(Math.random()*45 + 1) + " "); 
+        }
+        
     }
+
 
 }
