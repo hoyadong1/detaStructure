@@ -18,5 +18,6 @@ public class VectorTest {
             v.add(n);
         }
         System.out.println("가장 큰 수는 "+max);
+        v.stream().filter(value -> value>10).forEach(System.out ::print);
     }
 }
