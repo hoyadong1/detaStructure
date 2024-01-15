@@ -2,6 +2,7 @@ package dataStructure;
 
 import java.util.Scanner;
 
+
 class Queue {
     char[] c;
     int head, tail;
@@ -13,20 +14,23 @@ class Queue {
     }
 
     public void enqueue(char e) {
-        c[tail++] = e;
+        if(isFull()) return;
+        c[tail] = e;
+        tail= (tail+1)%20;
     }
 
     public char depueue() {
-        return c[head++];
+        if(isEmpty()) return 'N';
+        char r = c[head];
+        head = (head+1)%20;
+        return r;
     }
 
     public boolean isEmpty() {
         return (tail == head);
     }
-
-    public void reset() {
-        head = 0;
-        tail = 0;
+    public boolean isFull() {
+        return head == ((tail+2)%20);
     }
 }
 
@@ -54,7 +58,8 @@ public class QueueTraining {
             } else
                 System.out.print(false);
             System.out.println();
-            queue.reset();
+            stack.point = 0;
+            queue.head = queue.tail;
         }
 
     }
